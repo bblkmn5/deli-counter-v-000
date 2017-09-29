@@ -5,10 +5,14 @@ def line(katz_deli)
   if katz_deli.empty?
     puts "The line is currently empty."
   else
+    current_line = "The line is currently:"
+#if not empty, pulls the index number of each name starting from the beginning
     katz_deli.each.with_index(1) do |name, i|
-      puts "The line is currently: #{i}. #{name}"
+#pushes each name and index position into the output
+       current_line << "#{i}. #{name}"
     end
-
+#outputs full current line
+    puts current_line
   end
 end
 

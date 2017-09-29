@@ -9,7 +9,7 @@ def line(katz_deli)
 #if not empty, pulls the index number of each name starting from the beginning
     katz_deli.each.with_index(1) do |name, i|
 #pushes each name and index position into the output
-       current_line << "#{i}. #{name}"
+       current_line << " #{i}. #{name}"
     end
 #outputs full current line
     puts current_line
